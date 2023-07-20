@@ -25,11 +25,11 @@
   padding: 2rem 3rem;
 }
 
-.titleContainer > h3 {
+.titleContainer > h4 {
   color: #00cc88;
 }
 
-.titleContainer > h1 {
+.titleContainer > h2 {
   color: #0099ff;
 }
 
@@ -44,6 +44,7 @@
 }
 @media only screen and (max-width: 1200px) {
   .mainContainer {
+    flex-direction: column-reverse;
     margin: 0 2rem 0 5rem;
   }
 }
