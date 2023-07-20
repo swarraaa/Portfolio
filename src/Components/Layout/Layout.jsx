@@ -9,7 +9,9 @@ const Layout = () => {
     <div>
       {/* <Sidebar /> */}
       <HeroSection />
-      {/* <Skills /> */}
+      <div className={style.container}>
+        <Skills />
+      </div>
     </div>
   )
 }

@@ -6,3 +6,18 @@ line {
   stroke-linecap: round;
   fill: transparent;
 }
+
+.main {
+  height: 75vh;
+}
+
+@media only screen and (max-width: 1700px) {
+  .main {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main {
+    height: 40vh;
+  }
+}

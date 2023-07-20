@@ -20,7 +20,7 @@ const DrawSvg = () => {
   return (
     <div>
       <motion.svg
-        height='85vh'
+        className={style.main}
         viewBox='0 0 600 600'
         initial='hidden'
         animate='visible'

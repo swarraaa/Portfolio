@@ -1,0 +1,8 @@
+.word {
+  margin-right: 5px;
+}
+.wordMain,
+.charMain {
+  overflow: hidden;
+  display: flex;
+}
