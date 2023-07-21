@@ -35,3 +35,4 @@ const services = [
     icon: github,
   },
 ]
+export default services

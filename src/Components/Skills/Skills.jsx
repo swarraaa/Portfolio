@@ -3,10 +3,11 @@ import styles from './Skills.module.css'
 import AnimatedTextCharacter from '../WordAnimation/AnimatedTextCharacter'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
+import services from './allSkills'
 
 const defaultOptions = {
   reverse: false, // reverse the tilt direction
-  max: 35, // max tilt rotation (degrees)
+  max: 55, // max tilt rotation (degrees)
   perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
   scale: 1.1, // 2 = 200%, 1.5 = 150%, etc..
   speed: 1000, // Speed of the enter/exit transition
@@ -25,8 +26,9 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
+        className={styles.singleCard}
       >
-        <img src={icon} alt='web-development' />
+        <img src={icon} alt='web-development' className={styles.icons} />
 
         <h3>{title}</h3>
       </div>
@@ -41,8 +43,10 @@ const Skills = () => {
         <div className={styles.heading}>
           <AnimatedTextCharacter text='Im skilled at' />
         </div>
-        <div className={styles.skill}>
-          <ServiceCard />
+        <div className={styles.skills}>
+          {services.map((skill, index) => (
+            <ServiceCard key={index} title={skill.title} icon={skill.icon} />
+          ))}
         </div>
       </div>
     </>
