@@ -61,7 +61,7 @@ const HeroSection = () => {
           animate='visible'
           transition={{ delay: 0.9 }}
         >
-          I am a Frontend Developer with a passion for desiging. I believe i can
+          I am a Frontend Developer with a passion for desiging. I believe I can
           make your dream website a reality. Feel free to imagine your cool
           website and leave the creation to me! 😎
         </motion.p>

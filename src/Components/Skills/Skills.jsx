@@ -41,7 +41,7 @@ const Skills = () => {
     <>
       <div className={styles.mainContainer}>
         <div className={styles.heading}>
-          <AnimatedTextCharacter text='Im skilled at' />
+          <AnimatedTextCharacter text="I'm skilled at" />
         </div>
         <div className={styles.skills}>
           {services.map((skill, index) => (

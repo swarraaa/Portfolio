@@ -1,10 +1,12 @@
 .mainContainer {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.09);
+  width: 90%;
+  background: rgba(63, 63, 63, 0.05);
   backdrop-filter: blur(6px);
-  box-sizing: border-box;
   -webkit-backdrop-filter: blur(6px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 3rem 0;
+  margin: auto;
 }
 .heading {
   display: flex;
@@ -30,7 +32,9 @@
     0px 37px 80px rgba(255, 255, 255, 0.07);
   color: whitesmoke;
   font-size: 1.2rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .icons {
-  height: 5rem;
+  width: 50%;
 }
