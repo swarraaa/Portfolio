@@ -43,9 +43,9 @@ const AnimatedTextCharacter = ({ text }) => {
       whileInView='visible'
     >
       {letters.map((letter, index) => (
-        <motion.h2 variants={child} key={index}>
+        <motion.h3 variants={child} key={index}>
           {letter === ' ' ? '\u00A0' : letter}
-        </motion.h2>
+        </motion.h3>
       ))}
     </motion.div>
   )

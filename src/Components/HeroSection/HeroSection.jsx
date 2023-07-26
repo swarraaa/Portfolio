@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import style from './HeroSection.module.css'
-import DrawSvg from '../DrawSvg/DrawSvg'
-import Background from '../Background/Background'
+import DrawSvg from '../Utils/DrawSvg/DrawSvg'
+import Background from '../Utils/Background/Background'
 import profile from '../../Images/profile.jpg'
 
 const title = {

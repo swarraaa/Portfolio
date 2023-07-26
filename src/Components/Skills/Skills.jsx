@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Skills.module.css'
-import AnimatedTextCharacter from '../WordAnimation/AnimatedTextCharacter'
+import AnimatedTextCharacter from '../Utils/WordAnimation/AnimatedTextCharacter'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import services from './allSkills'
@@ -18,7 +18,7 @@ const defaultOptions = {
 }
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+  <Tilt options={defaultOptions} className={styles.card}>
     <motion.div>
       <div
         options={{

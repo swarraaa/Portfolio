@@ -6,19 +6,25 @@
   border-radius: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 3rem 0;
-  margin: auto;
+  margin: 5rem auto;
 }
-.heading {
+.heading,
+.phHeading1,
+.phHeading2 {
   display: flex;
   justify-content: center;
   color: white;
+}
+.phHeading1,
+.phHeading2 {
+  display: none;
 }
 .skills {
   display: flex;
   justify-content: center;
   padding: 3rem;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 8rem;
 }
 .singleCard {
   text-align: center;
@@ -32,12 +38,29 @@
     0px 37px 80px rgba(255, 255, 255, 0.07);
   color: whitesmoke;
   font-size: 1.2rem;
-  height: 180px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 35rem;
 }
 .icons {
   width: 50%;
 }
-.card {
-  width: 250px;
+
+@media only screen and (max-width: 700px) {
+  .singleCard {
+    width: 270px;
+  }
+  .phHeading1 {
+    display: flex;
+    margin-bottom: -2rem;
+  }
+  .phHeading2 {
+    display: flex;
+    margin-top: -3rem;
+  }
+  .heading {
+    display: none;
+  }
+  .skills {
+    gap: 2rem;
+  }
 }

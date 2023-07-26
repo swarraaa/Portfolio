@@ -5,6 +5,7 @@ import html from '../../Images/html.png'
 import js from '../../Images/js.png'
 import reactjs from '../../Images/reactjs.png'
 import mui from '../../Images/material-ui.png'
+import fm from '../../Images/framer-motion.png'
 const services = [
   {
     title: 'HTML',
@@ -25,6 +26,10 @@ const services = [
   {
     title: 'Material UI',
     icon: mui,
+  },
+  {
+    title: 'Framer-motion',
+    icon: fm,
   },
   {
     title: 'C++',
