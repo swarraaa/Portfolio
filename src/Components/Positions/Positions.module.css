@@ -7,6 +7,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 3rem 0;
   margin: 5rem auto;
+  overflow: hidden;
 }
 .heading,
 .phHeading1,
@@ -40,11 +41,34 @@
   font-size: 1.2rem;
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 35rem;
+  transition: all 0.6s;
 }
 .icons {
   width: 50%;
+  transition: all 0.6s;
+}
+h3 {
+  transition: all 0.3s ease-in;
+  line-height: 1rem;
 }
 
+.singleCard:hover {
+  background-color: rgba(0, 204, 136, 0.05);
+  border: 1px solid rgb(0, 204, 136);
+  box-shadow: 0px 1px 2.2px rgba(0, 204, 136, 0.02),
+    0px 2.5px 5.3px rgba(0, 204, 136, 0.028),
+    0px 4.6px 10px rgba(0, 204, 136, 0.035),
+    0px 8.3px 17.9px rgba(0, 204, 136, 0.042),
+    0px 15.5px 33.4px rgba(0, 204, 136, 0.05),
+    0px 37px 80px rgba(0, 204, 136, 0.07);
+}
+.singleCard:hover .icons {
+  width: 60%;
+}
+.singleCard:hover h3 {
+  font-size: 1.3rem;
+  color: rgb(187, 187, 187);
+}
 @media only screen and (max-width: 700px) {
   .singleCard {
     width: 270px;
@@ -62,5 +86,10 @@
   }
   .skills {
     gap: 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .singleCard h3 {
+    font-size: 1.1rem;
   }
 }

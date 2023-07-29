@@ -3,10 +3,26 @@ import styles from './Positions.module.css'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
-const Position = ({ inedx, club, post, logo }) => {
+const Position = ({ index, val, club, post, logo, mainControls }) => {
+  const initialX = val === 1 ? '-1000px' : '1000px'
+  const box = {
+    hidden: {
+      x: initialX,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+    },
+  }
   return (
-    <Tilt className={styles.card}>
-      <motion.div>
+    <div className={styles.card}>
+      <motion.div
+        variants={box}
+        initial='hidden'
+        animate={mainControls}
+        transition={{ duration: 1 }}
+      >
         <div
           options={{
             max: 45,
@@ -21,7 +37,7 @@ const Position = ({ inedx, club, post, logo }) => {
           <h3>{club}</h3>
         </div>
       </motion.div>
-    </Tilt>
+    </div>
   )
 }
 
