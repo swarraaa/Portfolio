@@ -1,0 +1,99 @@
+.mainContainer {
+  width: 90%;
+  background: rgba(63, 63, 63, 0.05);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 3rem 0;
+  margin: 5rem auto;
+  overflow: hidden;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  flex-wrap: wrap;
+  gap: 8rem;
+}
+.singleCard {
+  text-align: center;
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0px 1px 2.2px rgba(255, 255, 255, 0.02),
+    0px 2.5px 5.3px rgba(255, 255, 255, 0.028),
+    0px 4.6px 10px rgba(255, 255, 255, 0.035),
+    0px 8.3px 17.9px rgba(255, 255, 255, 0.042),
+    0px 15.5px 33.4px rgba(255, 255, 255, 0.05),
+    0px 37px 80px rgba(255, 255, 255, 0.07), inset 0 0 0 0 #111;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 35rem;
+  transition: all 0.6s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+
+}
+.singleCard > h2, .singleCard>h1, .singleCard>p{
+  opacity: 0;
+  transition: all 1s;
+}
+.singleCard>h2{
+  color: rgb(0, 153, 255);
+}
+
+.singleCard:hover {
+  background-color: rgba(0, 153, 255, 0.05);
+  border: 1px solid rgb(0, 153, 255);
+  box-shadow: 0px 1px 2.2px rgba(0, 153, 255, 0.02),
+    0px 2.5px 5.3px rgba(0, 153, 255, 0.028),
+    0px 4.6px 10px rgba(0, 153, 255, 0.035),
+    0px 8.3px 17.9px rgba(0, 153, 255, 0.042),
+    0px 15.5px 33.4px rgba(0, 153, 255, 0.05),
+    0px 37px 80px rgba(0, 153, 255, 0.07), inset 800px 0 0 0 #111;
+}
+
+.singleCard:hover > h1, .singleCard:hover >h2, .singleCard:hover>p  {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 700px) {
+  .singleCard {
+    width: 170px;
+    height: 170px;
+    padding: 2rem;
+    width: 230px;
+    transition: all 0.6s;
+  }
+  .singleCard:hover{
+    height: auto;
+  }
+  .singleCard > h2, .singleCard>h1, .singleCard>p{
+    transition: all 0.1s;
+    font-size: smaller  ;
+  }   
+  .heading{
+    margin: -1rem 0;
+  }
+  .skills {
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .singleCard h3 {
+    font-size: 1.1rem;
+  }
+}
