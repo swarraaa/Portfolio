@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './Positions.module.css'
-import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
 const Position = ({ index, val, club, post, logo, mainControls }) => {

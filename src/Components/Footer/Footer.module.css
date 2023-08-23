@@ -1,0 +1,212 @@
+.mainContainer {
+  width: 90%;
+  background: rgba(63, 63, 63, 0.05);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 3rem;
+  margin: 5rem auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* align-items: center; */
+}
+
+.leftConatiner,
+.rightConatiner,
+.imgConatiner {
+  /* border: 1px solid whitesmoke;   */
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.leftConatiner {
+  width: 50%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  color: rgb(196, 196, 196);
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  /* border: 1px solid white; */
+  /* flex: 1; */
+  max-width: 200px;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  /* font-weight: 900; */
+}
+.cont {
+  width: 150%;
+  display: flex;
+  gap: 3rem;
+}
+
+.github,
+.mail,
+.twitter,
+.linkedin {
+  transition: all 0.1s ease-in-out;
+}
+
+.github:hover {
+  color: rgb(255, 0, 85);
+}
+.linkedin:hover {
+  color: rgb(0, 204, 136);
+}
+.twitter:hover {
+  color: rgb(0, 153, 255);
+}
+.mail:hover {
+  color: rgb(246, 255, 0);
+}
+
+.logo > svg {
+  width: 2rem;
+  height: 2rem;
+}
+.leftConatiner > h1 {
+  font-size: 2rem;
+}
+.rightConatiner > h2 {
+  text-align: left;
+}
+.rightConatiner {
+  width: 30%;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 1px 2.2px rgba(255, 255, 255, 0.02),
+    0px 2.5px 5.3px rgba(255, 255, 255, 0.028),
+    0px 4.6px 10px rgba(255, 255, 255, 0.035),
+    0px 8.3px 17.9px rgba(255, 255, 255, 0.042),
+    0px 15.5px 33.4px rgba(255, 255, 255, 0.05),
+    0px 37px 80px rgba(255, 255, 255, 0.07), inset 0 0 0 0 #111;
+  color: whitesmoke;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.data {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+.data > input,
+.data > textarea {
+  width: 100%;
+}
+.imgConatiner {
+  margin-top: 3rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgConatiner > img {
+  width: 150%;
+  object-fit: cover;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.data > label {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+.data > input,
+.data > textarea {
+  font-size: 1.05rem;
+  background-color: rgba(17, 17, 17, 0.1);
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 2.2px rgba(255, 255, 255, 0.02),
+    0px 2.5px 5.3px rgba(255, 255, 255, 0.028),
+    0px 4.6px 10px rgba(255, 255, 255, 0.035),
+    0px 8.3px 17.9px rgba(255, 255, 255, 0.042),
+    0px 15.5px 33.4px rgba(255, 255, 255, 0.05),
+    0px 37px 80px rgba(255, 255, 255, 0.07), inset 0 0 0 0 #111;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  color: whitesmoke;
+}
+
+.data > input[type='email'],
+.data > input[type='text'],
+.data > textarea {
+  transition: all 0.3s ease-in-out;
+}
+
+.data > input[type='email']:focus {
+  border: 1px solid rgb(255, 0, 85);
+  box-shadow: 0px 1px 2.2px rgba(255, 0, 85, 0.02),
+    0px 2.5px 5.3px rgba(255, 0, 85, 0.028),
+    0px 4.6px 10px rgba(255, 0, 85, 0.035),
+    0px 8.3px 17.9px rgba(255, 0, 85, 0.042),
+    0px 15.5px 33.4px rgba(255, 0, 85, 0.05),
+    0px 37px 80px rgba(255, 0, 85, 0.07), inset 0 0 0 0 #111;
+}
+.data > input[type='text']:focus {
+  border: 1px solid rgb(0, 204, 136);
+  box-shadow: 0px 1px 2.2px rgba(0, 204, 136, 0.02),
+    0px 2.5px 5.3px rgba(0, 204, 136, 0.028),
+    0px 4.6px 10px rgba(0, 204, 136, 0.035),
+    0px 8.3px 17.9px rgba(0, 204, 136, 0.042),
+    0px 15.5px 33.4px rgba(0, 204, 136, 0.05),
+    0px 37px 80px rgba(0, 204, 136, 0.07), inset 0 0 0 0 #111;
+}
+.data > textarea:focus {
+  border: 1px solid rgb(0, 153, 255);
+  box-shadow: 0px 1px 2.2px rgba(0, 153, 255, 0.02),
+    0px 2.5px 5.3px rgba(0, 153, 255, 0.028),
+    0px 4.6px 10px rgba(0, 153, 255, 0.035),
+    0px 8.3px 17.9px rgba(0, 153, 255, 0.042),
+    0px 15.5px 33.4px rgba(0, 153, 255, 0.05),
+    0px 37px 80px rgba(0, 153, 255, 0.07), inset 0 0 0 0 #111;
+}
+
+.submitbtn {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  background-image: linear-gradient(
+    to right bottom,
+    #ff0055,
+    #0099ff,
+    #00cc88,
+    #f6ff00
+  );
+  background-size: 400% 400%;
+  background-position: 0% 0%;
+  transition: all 0.4s ease-in-out;
+  font-weight: 900;
+  color: whitesmoke;
+  font-size: 1.1rem;
+}
+
+.submitbtn:hover {
+  background-position: 100% 100%;
+  color: black;
+}

@@ -26,15 +26,21 @@ const Projects = () => {
           ref={ref}
         >
           {projects.map((position, index) => (
-            <Project
-              key={index}
-              val={position.index}
-              name={position.name}
-              org={position.org}
-              description={position.description}
-              icon={position.icon}
-              mainControls={mainControls}
-            />
+            <a
+              href={position.url}
+              style={{ textDecoration: 'none' }}
+              target='__blank'
+            >
+              <Project
+                key={index}
+                val={position.index}
+                name={position.name}
+                org={position.org}
+                description={position.description}
+                icon={position.icon}
+                mainControls={mainControls}
+              />
+            </a>
           ))}
         </motion.div>
       </motion.div>

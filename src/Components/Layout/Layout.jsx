@@ -5,6 +5,7 @@ import Skills from '../Skills/Skills'
 import style from './Layout.module.css'
 import Projects from '../Projects/Projects'
 import Positions from '../Positions/Positions'
+import Footer from '../Footer/Footer'
 
 const Layout = () => {
   return (
@@ -14,6 +15,7 @@ const Layout = () => {
       <Skills />
       <Positions />
       <Projects />
+      <Footer />
     </div>
   )
 }
