@@ -210,3 +210,42 @@
   background-position: 100% 100%;
   color: black;
 }
+.rightConatiner > h2 {
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 1200px) {
+  .mainContainer {
+    width: 80%;
+  }
+  .rightConatiner {
+    width: 70%;
+  }
+  .cont {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .mainContainer {
+    padding: 3rem 1rem;
+  }
+  .cont {
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  .imgConatiner {
+    width: 90%;
+  }
+  .imgConatiner > img {
+    width: 95%;
+  }
+  .data {
+    width: 90%;
+  }
+  .data > input,
+  .data > textarea {
+    width: 100%;
+  }
+  .leftConatiner {
+    margin-left: 3rem;
+  }
+}
