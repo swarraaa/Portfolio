@@ -150,7 +150,7 @@ const Footer = () => {
               <input
                 type='text'
                 name='name'
-                placeholder='Your Name'
+                placeholder='Enter your name'
                 autoComplete='off'
                 required
                 value={formData.name}
@@ -162,7 +162,7 @@ const Footer = () => {
               <input
                 type='email'
                 name='email'
-                placeholder='Your Email'
+                placeholder='Enter your email'
                 autoComplete='off'
                 required
                 value={formData.email}

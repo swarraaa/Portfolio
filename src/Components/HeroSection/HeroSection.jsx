@@ -12,9 +12,10 @@ const title = {
   },
 }
 const pfp = {
-  hidden: { scale: 0 },
+  hidden: { scale: 0, opacity: 0 },
   visible: {
     scale: 1,
+    opacity: 1,
   },
 }
 
@@ -35,7 +36,7 @@ const HeroSection = () => {
           variants={title}
           initial='hidden'
           animate='visible'
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.1 }}
         >
           Hello, I'm
         </motion.h5>
@@ -43,7 +44,7 @@ const HeroSection = () => {
           variants={title}
           initial='hidden'
           animate='visible'
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.4 }}
         >
           Swarada Bhosale
         </motion.h3>
@@ -61,7 +62,7 @@ const HeroSection = () => {
           animate='visible'
           transition={{ delay: 0.9 }}
         >
-          I am a Frontend Developer with a passion for desiging. I believe I can
+          I am a Frontend Developer with a passion for design. I believe I can
           make your dream website a reality. Feel free to imagine your cool
           website and leave the creation to me! 😎
         </motion.p>
@@ -69,7 +70,9 @@ const HeroSection = () => {
       <motion.div className={style.Svg}>
         <DrawSvg />
       </motion.div>
-      <Background />
+      <div className={style.bg}>
+        <Background />
+      </div>
     </motion.div>
   )
 }

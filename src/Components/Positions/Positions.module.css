@@ -47,7 +47,7 @@
   width: 50%;
   transition: all 0.6s;
 }
-h3 {
+.singleCard > h3 {
   transition: all 0.3s ease-in;
   line-height: 1rem;
 }

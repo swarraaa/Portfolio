@@ -37,6 +37,7 @@
 
 .titleContainer {
   color: #ff0055;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -63,7 +64,9 @@
     color: whitesmoke;
   }
 }
-
+.Svg {
+  z-index: 1;
+}
 @media only screen and (max-width: 800px) {
   .Svg {
     display: none;
